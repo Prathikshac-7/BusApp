@@ -1,6 +1,6 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
-import { Ionicons } from '@expo/vector-icons'; // Importing Ionicons for icons
+import { Ionicons } from '@expo/vector-icons';
 
 export default function TabLayout() {
   return (
@@ -14,12 +14,15 @@ export default function TabLayout() {
           borderTopLeftRadius: 16,
           borderTopRightRadius: 16,
           height: 80, // Adjusted height for better visibility
-          paddingVertical: 10, // Added vertical padding for better alignment
-          justifyContent: 'center', // Centered content in the tab bar
+          paddingTop: 10, // Adjusted to add space above icons
+          paddingBottom: 5, // Added to bring icons slightly down
         },
         tabBarIconStyle: {
-          justifyContent: 'center', // Center icons within their containers
-          alignItems: 'center',
+          justifyContent: 'center', // Center icons vertically
+          alignItems: 'center', // Center icons horizontally
+        },
+        tabBarLabelStyle: {
+          display: 'none', // Hide labels to focus only on icons
         },
       }}
     >

@@ -60,7 +60,7 @@ export default function TravelScreen() {
                   <Ionicons name="location" size={20} color="#FFFFFF" />
                 </View>
                 <View>
-                  <Text style={styles.locationText}>Location 1</Text>
+                  <Text style={styles.locationHeader}>Location 1</Text>
                   <Text style={styles.dateText}>Date</Text>
                 </View>
               </View>
@@ -71,7 +71,7 @@ export default function TravelScreen() {
                   <Ionicons name="location-outline" size={20} color="#FFFFFF" />
                 </View>
                 <View>
-                  <Text style={styles.locationText}>Location 2</Text>
+                  <Text style={styles.locationHeader}>Location 2</Text>
                   <Text style={styles.dateText}>Date</Text>
                 </View>
               </View>
@@ -120,9 +120,10 @@ const styles = StyleSheet.create({
   },
   dots: {
     position: 'absolute',
-    top: 20,
+    top: 10,
     color: 'white',
     right: 20,
+    fontSize: 40,
   },
   backButtonText: {
     fontSize: 24,
@@ -166,8 +167,8 @@ const styles = StyleSheet.create({
   },
   vehicleIcon: {
     position: 'absolute',
-    top: -12, // Aligning the icon on the border of the card
-    left: 20,
+    top: -10, // Adjusted to align properly with the card
+    left: 20, // Keeps the icon near the left edge
     backgroundColor: '#E6E6FA',
     padding: 8,
     borderRadius: 20,
@@ -189,6 +190,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginRight: 12,
+  },
+  locationHeader: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#666',
   },
   dateText: {
     fontSize: 14,
